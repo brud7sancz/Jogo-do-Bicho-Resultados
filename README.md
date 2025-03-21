@@ -6,7 +6,7 @@ Este projeto coleta e organiza os **resultados históricos** do Jogo do Bicho a 
 
 - 📅 **Coleta de Resultados**: Captura os números sorteados desde um ano específico até a data atual.  
 - 🌍 **Consulta Online**: Faz requisições a um site público para obter os dados.  
-- 📄 **Geração de Relatório**: Cria um arquivo `resultados_jogo_do_bicho.html` formatado como tabela.  
+- 📄 **Geração de Relatório**: Cria um arquivo `resultados.html` formatado como tabela.  
 - 🛠 **Automação**: Realiza a busca de forma contínua e evita bloqueios ao acessar os sites.  
 
 
