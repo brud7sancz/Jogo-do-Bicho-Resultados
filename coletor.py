@@ -10,24 +10,14 @@ def extrair_resultados(soup, data_str):
     for h3 in soup.find_all("h3"):
         titulo = h3.get_text(strip=True)
         
-        tipo = None
-        for horario in horarios:
-            if horario in titulo:
-                tipo = horario
-                break
+        tipo = next((horario for horario in horarios if horario in titulo), None)
         
         if tipo:
             p = h3.find_next("p")
             
             if p:
                 linhas = p.get_text(separator="\n").split("\n")
-                
-                numeros = []
-                for linha in linhas:
-                    partes = linha.split("►")
-                    if len(partes) == 2:
-                        numero = partes[1].strip()
-                        numeros.append(numero)
+                numeros = [linha.split("►")[1].strip() for linha in linhas if "►" in linha]
                 
                 while len(numeros) < 7:
                     numeros.append("")
