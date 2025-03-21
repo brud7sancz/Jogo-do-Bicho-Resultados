@@ -1,31 +1,18 @@
-# Jogo do Bicho Resultados
- 
-# 📊 Jogo do Bicho - Resultados Históricos
+# 📊 Jogo do Bicho - Coletor de Resultados  
 
-Este repositório tem como objetivo coletar, organizar e analisar **dados históricos** do Jogo do Bicho, um fenômeno cultural amplamente difundido em diversas regiões. O foco é explorar os padrões estatísticos e a evolução dos números ao longo do tempo.
+Este projeto coleta e organiza os **resultados históricos** do Jogo do Bicho a partir de fontes públicas. Ele gera um **arquivo HTML formatado** contendo os números extraídos ao longo dos anos, permitindo análises estatísticas e acompanhamento de padrões.  
 
-## 🚀 Objetivo  
+## 🚀 Funcionalidades  
 
-📌 Este projeto tem caráter **educacional e cultural**, servindo para análise estatística e estudo de padrões numéricos dentro de um contexto tradicional.
+- 📅 **Coleta de Resultados**: Captura os números sorteados desde um ano específico até a data atual.  
+- 🌍 **Consulta Online**: Faz requisições a um site público para obter os dados.  
+- 📄 **Geração de Relatório**: Cria um arquivo `resultados_jogo_do_bicho.html` formatado como tabela.  
+- 🛠 **Automação**: Realiza a busca de forma contínua e evita bloqueios ao acessar os sites.  
 
-## 📜 Contexto Cultural  
 
-O Jogo do Bicho surgiu no Brasil no século XIX como uma forma popular de entretenimento e continua presente no imaginário coletivo. Este projeto visa preservar e estudar esses registros históricos.
+## ⚙️ Como Usar  
 
-## 📂 Estrutura do Projeto  
+### 1️⃣ Instalar Dependências  
+Este projeto utiliza `requests` e `BeautifulSoup` para acessar e processar os dados. Instale-os com:  
 
-- `dados/` → Contém registros históricos organizados por data.  
-- `scripts/` → Ferramentas para coletar e processar os dados.  
-- `analises/` → Relatórios e gráficos sobre tendências numéricas.  
-
-## ⚖️ Aviso Legal  
-
-Este repositório **não promove apostas ou qualquer prática ilegal**. Os dados são coletados de fontes públicas apenas para **fins de pesquisa e estudo cultural**.  
-
-## 📬 Contribuições  
-
-Se você deseja contribuir com dados históricos ou análises estatísticas, fique à vontade para abrir um **Pull Request** ou sugerir melhorias.  
-
----
-
-© 2025 - Projeto de pesquisa cultural e estatística.  
+pip install requests bs4
